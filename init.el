@@ -52,7 +52,7 @@
 ;; APPEARANCE
 ;; ---------------------
 
-(set-face-attribute 'default nil :font "Fira Code Retina" :height 140) ; font
+(set-face-attribute 'default nil :font "Fira Code" :height 130) ; font
 (load-theme 'leuven-dark)        ; theme
 (setq inhibit-startup-message t) ; do not show help on startup
 (scroll-bar-mode -1)             ; disable visible scrollbar
@@ -69,7 +69,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages '(yaml-mode magit counsel swiper ivy command-log-mode)))
+ '(custom-safe-themes
+   '("34af44a659b79c9f92db13ac7776b875a8d7e1773448a8301f97c18437a822b6" default))
+ '(package-selected-packages
+   '(yaml-mode leuven-theme magit counsel swiper ivy command-log-mode)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

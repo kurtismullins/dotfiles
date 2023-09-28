@@ -70,7 +70,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    '("f25f174e4e3dbccfcb468b8123454b3c61ba94a7ae0a870905141b050ad94b8f" default))
- '(package-selected-packages '(counsel swiper ivy command-log-mode)))
+ '(package-selected-packages '(yaml-mode magit counsel swiper ivy command-log-mode)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

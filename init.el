@@ -3,7 +3,9 @@
 ;; -------------------------------------
 
 (require 'package)
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+(setq package-archives '(("melpa" . "https://melpa.org/packages/")
+			 ("org" . "https://orgmode.org/elpha/")
+			 ("elpa" . "https://elpa.gnu.org/packages")))
 
 (package-initialize)
 (unless package-archive-contents
@@ -50,14 +52,13 @@
 ;; APPEARANCE
 ;; ---------------------
 
-(set-face-attribute 'default nil :font "Fira Code" :height 120) ; font
-(load-theme 'dracula t)      ; theme
+(set-face-attribute 'default nil :font "Fira Code Retina" :height 140) ; font
+(load-theme 'leuven-dark)        ; theme
 (setq inhibit-startup-message t) ; do not show help on startup
 (scroll-bar-mode -1)             ; disable visible scrollbar
 (tool-bar-mode -1)               ; disable toolbar
 (tooltip-mode -1)                ; disable tooltips
 (set-fringe-mode 10)             ; padding (left and right only?)
-
 (menu-bar-mode -1)               ; disable menu bar
 (setq visible-bell t)            ; Use the visible bell instead of the audio
 
@@ -68,8 +69,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   '("f25f174e4e3dbccfcb468b8123454b3c61ba94a7ae0a870905141b050ad94b8f" default))
  '(package-selected-packages '(yaml-mode magit counsel swiper ivy command-log-mode)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

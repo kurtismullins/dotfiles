@@ -53,7 +53,7 @@
 ;; ---------------------
 
 (set-face-attribute 'default nil :font "Fira Code" :height 130) ; font
-(load-theme 'leuven-dark)        ; theme
+(load-theme 'leuven-dark t)        ; theme
 (setq inhibit-startup-message t) ; do not show help on startup
 (scroll-bar-mode -1)             ; disable visible scrollbar
 (tool-bar-mode -1)               ; disable toolbar
